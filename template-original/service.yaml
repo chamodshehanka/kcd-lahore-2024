@@ -1,7 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "kcdlahore-2024.fullname" . }}
+  namespace: {{ .Values.namespace }}
+  name: {{ . }}
   labels:
     {{- include "kcdlahore-2024.labels" . | nindent 4 }}
 spec:

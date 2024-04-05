@@ -8,6 +8,10 @@ appName: "kcdlahore-2024"
 appVersion: "0.1.0"
 namespace: "dev"
 
+service:
+  type: LoadBalancer
+  port: 80
+
 image:
   repository: nginx
   pullPolicy: Always
@@ -43,9 +47,7 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 
-service:
-  type: ClusterIP
-  port: 80
+
 
 ingress:
   enabled: false

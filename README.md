@@ -10,21 +10,21 @@ helm create kcdlahore-2024
 ### Install the Helm Chart
 ```bash
 
-helm install kcdlahore-2024 ./kcdlahore-2024
+helm install kcdlahore-2024-release-1 ./kcdlahore-2024
 
 ```
 
 ### Upgrade the Helm Chart
 ```bash 
 
-helm upgrade kcdlahore-2024 ./kcdlahore-2024
+helm upgrade kcdlahore-2024-release-1 ./kcdlahore-2024
 
 ```
 
 ### Uninstall the Helm Chart
 ```bash
 
-helm uninstall kcdlahore-2024
+helm uninstall kcdlahore-2024-release-1
 
 ```
 

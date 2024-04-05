@@ -48,12 +48,12 @@ spec:
 ```
 
 ### Get the status of the Job
-kubectl get jobs -n <namespace>
+kubectl get jobs -n dev
 
 ### Get the name of the Job pod
-kubectl get pods -n <namespace>
+kubectl get pods -n dev
 
 ### View the logs of the Job pod
-kubectl logs <job-pod-name> -n <namespace>
+kubectl logs <job-pod-name> -n dev
 
 

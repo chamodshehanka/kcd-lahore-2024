@@ -29,6 +29,10 @@ helm uninstall kcdlahore-2024-release-1
 ```
 
 ## Helm Hooks
+
+### Create a pre-installation hook
+Create a new directory inside `templates` called `hooks` and create a new file called `pre-install-hook.yaml` with the following content:
+
 ```yaml
 
 apiVersion: batch/v1
@@ -48,12 +52,16 @@ spec:
 ```
 
 ### Get the status of the Job
+```bash
 kubectl get jobs -n dev
+```
 
 ### Get the name of the Job pod
+```bash
 kubectl get pods -n dev
+```
 
 ### View the logs of the Job pod
+```bash
 kubectl logs <job-pod-name> -n dev
-
-
+```
